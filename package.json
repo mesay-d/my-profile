@@ -1,0 +1,19 @@
+{
+  "name": "mesay_profile",
+  "version": "1.0.0",
+  "description": "my profile sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mesay-d/my-profile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mesay-d/my-profile/issues"
+  },
+  "homepage": "https://github.com/mesay-d/my-profile#readme"
+}
