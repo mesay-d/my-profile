@@ -1,0 +1,15 @@
+<p>table works!</p>
+<table [ngClass]="classNames" class="ui table">
+    <thead>
+        <tr>
+            <th *ngFor="let head of headers">{{ head.label }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let record of data">
+            <td *ngFor="let head of headers">
+                {{ head.key ? record[head.key]:'' }}
+            </td>
+        </tr>
+    </tbody>
+</table>

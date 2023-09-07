@@ -1,2 +1,16 @@
-<app-elementshome></app-elementshome>
-<router-outlet></router-outlet>
+
+
+<!-- <a href="/elements">Elements</a>
+<a href="/collections">collecations</a> -->
+<div class="ui-container">
+    <div class="ui secondary pointing menu">
+        <a routerLink="/elements" routerLinkActive="active" class="item">Elements</a>
+        <a routerLink="/collections" routerLinkActive="active" class="item">Collecations</a>
+        <a routerLink="/view" routerLinkActive="active" class="item">View</a>
+        <a routerLink="/mods" routerLinkActive="active" class="item">Mods</a>
+    </div>
+    <div class="ui segment">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
