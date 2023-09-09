@@ -1,0 +1,20 @@
+<!-- <div [innerHTML]="xss"></div> -->
+<p>page-list works!</p>
+<table>
+<thead>
+    <tr>
+        <th>Title</th>
+        <th>wordCount</th>
+        <th>snappet</th>
+    </tr>
+</thead>
+<tr *ngFor="let page of pagelist"> 
+    <td>
+        <a target="_blank" [href]="'https://en.wikipedia.org?curid='+page.pageid">
+ {{page.title}}
+        </a>
+       </td>
+    <td>p{{page.wordcount}}</td>
+    <td [innerHTML]="page.snippet"></td>
+</tr>
+</table>

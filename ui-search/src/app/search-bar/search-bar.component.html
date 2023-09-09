@@ -1,0 +1,8 @@
+
+
+<!-- <input [(ngModel)]="title"> if you want to implated this method you need to implemeted th form module -->
+
+<form (submit)="onFormSubmit($event)">
+   <input #inputField (input)="title = inputField.value || ''"> 
+</form>
+
